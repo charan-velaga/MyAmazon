@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="styles/orders.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__left-section">
+            <a href="index.html"><img src="images/amazon-logo-white.png" alt="amzaon icon"  width="100" height="30.93"></a>
+        </div>
+        <div class="header__middle-section">
+            <input type="text" placeholder="Search" class="header__search-bar" name="search-bar">
+            <button class="header__search-button">
+                <img src="images/icons/search-icon.png" alt="search" width="22" height="22">
+            </button>
+        </div>
+        <div class="header__right-section">
+            <a href="orders.html" class="header__return-order"><span class="header__return-text">Returns</span> <span class="header__order-text">& Orders</span></a>
+            <a href="check-out.html" class="header__cart-section"><img src="images/icons/cart-icon.png" alt="cart" width="50" height="34.61">
+                <div class="header__cart-count"></div>
+                <div class="header__cart-text">Cart</div>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="your-orders-title">Your Orders</div>
+        <div class="order-grid">
+            <div class="order-container js-all-orders">
+            </div>
+        </div>
+        <script type="module" src="scripts/ordered.js"></script>
+    </main>
+</body>
+</html>

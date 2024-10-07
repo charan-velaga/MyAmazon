@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color:rgb(19, 25, 33);
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+    z-index: 1;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header__left-section{
+    padding: 10px;
+}
+.header__middle-section{
+    flex: 1;
+    max-width: 850px;
+    margin:0, 10px;
+    display: flex;
+    align-items: center;
+}
+.header__search-bar{
+    flex: 1;
+    width: 0;
+    height: 38px;
+    font-size: 16px;
+    padding-left: 15px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.header__search-button{
+    background-color: rgb(254, 189, 105);
+    width: 45px;
+    height: 38px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;   
+}
+.header__right-section{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap:20px;
+}
+.header__return-text{
+    font-size: 13px ;
+    display: block;
+}
+.header__order-text{
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+}
+.header__cart-count{
+    position: absolute;
+    top:4px;
+    left:16px;
+    color: rgb(240, 136, 4);
+    font-size: 16px;
+    font-weight: 700;
+    width: 26px;
+    text-align: center;
+}
+.header__cart-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.main{
+    max-width: 850px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.your-orders-title{
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+.order-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+}
+.order-container{
+    display: block;
+    unicode-bidi: isolate;
+}
+.order-header{
+    background-color: rgb(240, 242, 242);
+    border: 1px solid rgb(213, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.order-header-left{
+    display: flex;
+    flex-shrink: 0;
+}
+.order-date, .order-total {
+    margin-right: 45px;
+}
+.order-header-title{
+    font-weight: 500;
+}
+.products-container{
+    padding: 40px 25px;
+    border: 1px solid rgb(213, 217, 217);
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: grid;
+    grid-template-columns: 110px 1fr 220px;
+    column-gap: 35px;
+    row-gap: 60px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.product-image{
+    max-width: 110px;
+    max-height: 110px;
+}
+.product-details{
+    display: block;
+}
+.product-name{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.product-date{
+    margin-bottom: 3px;
+}
+.product-quantity{
+    margin-bottom: 8px;
+}
+.buy-again-button{
+    font-size: 15px;
+    width: 140px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.button-primary{
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.button-primary:hover{
+    background-color: rgb(247, 202, 0);
+    border: 1px solid rgb(242, 194, 0);
+}
+.buy-again-icon{
+    margin-right: 15px;
+}
+.track-button-section{
+    align-self: start;
+}
+.track-package-button {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+}
+.button-secondary{
+    color: rgb(33, 33, 33);
+    background: white;
+    border: 1px solid rgb(213, 217, 217);
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.no-orders{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 50px ;
+    display: block;
+}
