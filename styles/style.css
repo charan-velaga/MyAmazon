@@ -61,6 +61,9 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;   
 }
+.header__search-button:hover{
+  background-color: hsl(34, 99%, 65%);;
+}
 .header__right-section{
     display: flex;
     align-items: center;

@@ -1,11 +1,17 @@
-import {products,findProductById} from '../data/products.js'
+import {findProductById} from '../data/products.js'
 import { orders } from '../data/orderitems.js';
 import { getDateFromDate, getDifferenceInDays } from './utlity/utl.js';
+import { findCartQuantity } from '../data/cart.js';
+
 
 const url = new URL(window.location.href);
 const productId = url.searchParams.get('productId');
 const myOrderId=url.searchParams.get('orderId');
 let myquantity,mydate,differenceInDays,myOrderDate;
+
+
+
+document.querySelector('.header__cart-count').innerHTML=findCartQuantity();
 
 orders.forEach(myorder => {
     if(myorder.orderId===myOrderId){
