@@ -13,3 +13,14 @@ export function dateMonthText(myDate){
     const deliveryDate=today.add(myDate,'day');
     return deliveryDate.format('MMMM D');
 }
+export function getDateFromDate(mydate){
+    const monthDate=dayjs(mydate,"MMMM D");
+    const dayMonthDate=monthDate.format("dddd, MMMM D")
+    return dayMonthDate;
+}
+export function getDifferenceInDays(date1,date2){
+    const d1=dayjs(date1,"MMMM D");
+    const d2=dayjs(date2,"MMMM D");
+    return d2.diff(d1,'day');
+
+}

@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color:rgb(19, 25, 33);
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+    z-index: 1;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header__left-section{
+    padding: 10px;
+}
+.header__middle-section{
+    flex: 1;
+    max-width: 850px;
+    margin:0, 10px;
+    display: flex;
+    align-items: center;
+}
+.header__search-bar{
+    flex: 1;
+    width: 0;
+    height: 38px;
+    font-size: 16px;
+    padding-left: 15px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.header__search-button{
+    background-color: rgb(254, 189, 105);
+    width: 45px;
+    height: 38px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;   
+}
+.header__right-section{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap:20px;
+}
+.header__return-text{
+    font-size: 13px ;
+    display: block;
+}
+.header__order-text{
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+}
+.header__cart-count{
+    position: absolute;
+    top:4px;
+    left:16px;
+    color: rgb(240, 136, 4);
+    font-size: 16px;
+    font-weight: 700;
+    width: 26px;
+    text-align: center;
+}
+.header__cart-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.main{
+    max-width: 850px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.go-to-all-orders{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.go-to-all-orders a{
+    color: #017cb6;
+    cursor: pointer;
+}
+.product-arriving-date{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.product-name,
+.product-quantity{
+    margin-bottom: 3px;
+}
+.product-image{
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.display-track-text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.current-status-lable{
+    color: rgb(6, 125, 98);
+}
+
+.progress-bar{
+    height: 25px;
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.status-bar{
+    height: 100%;
+    background-color: green;
+    border-radius: 50px;
+    width: 0;
+    transition: width 1s ease;
+}

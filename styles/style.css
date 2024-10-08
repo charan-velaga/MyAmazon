@@ -12,6 +12,7 @@
     --rating-count-color:rgb(1, 124, 182);
     --shadow-color:0 2px 5px rgba(213, 217, 217, 0.5);
     --add-cart-color:rgb(255, 216, 20);
+    --add-cart-color-hover: hsl(50, 100%, 40%);
 }
 .header{
     display: flex;
@@ -199,6 +200,10 @@
     border-radius: 50px;
     padding: 8px;
     width: 100%;
+}
+.main__add-cart-button:hover{
+  background-color: var(--add-cart-color-hover);
+  border: 1px solid var(--add-cart-color-hover);
 }
 .main__product-added{
     color:green;

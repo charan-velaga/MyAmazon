@@ -35,7 +35,7 @@ export function renderOrderSummary(){
                             <div class="product-cost">$${fixTwoDecimals(p.priceCents)}</div>
                             <div class="product-quantity">Quantity: 
                                 <span class="product-quantity-count js-product-quantity-count" data-product-id=${value.id}>${value.quantity}</span>
-                                <input type="number" class="update-input js-input-text no-display" value="3">
+                                <input type="number" class="update-input js-input-text no-display" value="${value.quantity}">
                                 <span class="product-update secondary-link js-product-update">update</span>
                             <span class="product-delete secondary-link js-product-delete" data-product-id=${value.id}>delete</span>
                             </div>

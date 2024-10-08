@@ -1,9 +1,9 @@
 import { findProductById } from '../data/products.js';
-import {cart, addToCart} from '../data/cart.js';
+import {cart, addToCart, findCartQuantity} from '../data/cart.js';
 import {orders} from '../data/orderitems.js';
 
 const ordersGrid=document.querySelector('.js-all-orders');
-document.querySelector('.header__cart-count').innerHTML=cart.length;
+document.querySelector('.header__cart-count').innerHTML=findCartQuantity();
 if(orders.length===0){
     ordersGrid.innerHTML=`<div class="no-orders">No orders available</div>`
 }
@@ -52,7 +52,7 @@ else{
                             </button>
                         </div>
                         <div class="track-button-section">
-                        <a href="#"><button class="track-package-button button-secondary">Track Package</button></a>
+                        <button class="track-package-button button-secondary js-track-button js-track-${productItem.id}" data-product-id="${productItem.id}" data-order-id="${orderedItem.orderId}">Track Package</button>
                         </div>  
                         `
     })
@@ -68,6 +68,12 @@ document.querySelectorAll('.js-buy-again').forEach(button=>{
         setTimeout(()=>{buyAgain.innerHTML=originalhtml},1000);
         const productId=buyAgain.dataset.orderedId;
         addToCart(productId,1);
-        document.querySelector('.header__cart-count').innerHTML=cart.length;
+        document.querySelector('.header__cart-count').innerHTML=findCartQuantity();
 })
+})
+document.querySelectorAll('.js-track-button').forEach(button=>{
+    button.addEventListener('click',()=>{
+        const {productId,orderId}=button.dataset;
+        window.location.href="../trackOrder.html?productId="+productId+"&orderId="+orderId;
+    })
 })
