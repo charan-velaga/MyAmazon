@@ -219,3 +219,21 @@
 .display-added{
   opacity: 1;
 }
+.no-products{
+  margin: 100px;
+  font-weight: 700;
+  width: 100%;
+}
+.choose-size{
+  height: 20px;
+  display: flex;
+  gap: 10px;
+}
+.size-button{
+  width: 30px;
+  height: 20px;
+}
+.selected-size{
+  border:2px solid var(--add-cart-color);
+  font-weight: 700;
+}

@@ -10,6 +10,7 @@ export const products = [
     priceCents: 1090,
     keywords: [
       "socks",
+      "sock",
       "sports",
       "apparel"
     ]
@@ -25,6 +26,7 @@ export const products = [
     priceCents: 2095,
     keywords: [
       "sports",
+      "ball",
       "basketballs"
     ]
   },
@@ -39,6 +41,9 @@ export const products = [
     priceCents: 799,
     keywords: [
       "tshirts",
+      "tshirt",
+      "clothes",
+      "dress",
       "apparel",
       "mens"
     ],
@@ -71,6 +76,8 @@ export const products = [
     priceCents: 2067,
     keywords: [
       "plates",
+      "plate",
+      "plate set",
       "kitchen",
       "dining"
     ]
@@ -86,7 +93,10 @@ export const products = [
     priceCents: 3499,
     keywords: [
       "kitchen",
-      "cookware"
+      "cookware",
+      "plate",
+      "plates",
+      "oven plates",
     ]
   },
   {
@@ -101,8 +111,12 @@ export const products = [
     keywords: [
       "hoodies",
       "sweaters",
-      "apparel"
-    ]
+      "apparel",
+      "tshirts",
+      "tshirt",
+      "clothes",
+    ],
+    type: "clothing",
   },
   {
     id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
@@ -118,7 +132,8 @@ export const products = [
       "washroom",
       "restroom",
       "towels",
-      "bath towels"
+      "bath towels",
+      "clothes"
     ]
   },
   {
@@ -655,7 +670,8 @@ export const products = [
       "hoodies",
       "apparel",
       "mens"
-    ]
+    ],
+    type: "clothing",
   }
 ];
 
